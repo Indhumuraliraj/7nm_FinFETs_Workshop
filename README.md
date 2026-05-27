@@ -946,7 +946,7 @@ V_{REF} \approx 1.2V
 ```
 
 
-![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/Bandgap_reference.png)
+![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/lab/Bandgap_reference.png)
 
 ## 3.2 Why was Bandgap Reference Introduced?
 
@@ -1038,7 +1038,7 @@ The aim is to analyze key performance parameters such as:
 In this project, the Bandgap Reference circuit is designed and simulated using Xschem and Ngspice. The circuit performance is analyzed by varying supply voltage and temperature conditions.
 
 ### BGR Schematic in Xschem 
-![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/Bandgap_ref_sch.png)
+![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/lab/Bandgap_ref_sch.png)
 
 ## Simulations Performed
 
