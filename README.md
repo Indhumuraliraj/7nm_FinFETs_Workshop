@@ -3,7 +3,7 @@
 
 This GitHub repository documents the **10-day workshop on FinFET Circuit Design and Characterization using ASAP7 PDK** offered by **VSD Corp. Pvt. Ltd.**
 
-
+---
 ##  Table of Contents
 
 | Module | Topic(s) Covered |
@@ -23,7 +23,7 @@ This GitHub repository documents the **10-day workshop on FinFET Circuit Design 
 |  |  Design of a BGR Circuit |
 |  | Module 3 Assignment - Bandgap Reference Design and Simulation using Xschem |
 
-
+---
 ##  Workshop Objectives
 
 - Understand FinFET device architecture and scaling challenges
@@ -37,12 +37,13 @@ This GitHub repository documents the **10-day workshop on FinFET Circuit Design 
 # 1. FinFET Devices and Innovations
 
 ## 1.1 Path To Zetta Scale Computing
+![Image](https://github.com/Indhumuraliraj/7nm_FinFETs_Workshop/blob/main/images/Zetta_Scale_computing.png)
 
 ### Overview
 
 The evolution of computing has always been driven by society’s need to solve increasingly complex problems. From code-breaking machines during World War II to today’s AI-powered supercomputers, semiconductor technology has continuously evolved to deliver higher performance, smaller devices, and lower power consumption.
 
-![Image]()
+
 However, modern applications such as:
 
 - Artificial Intelligence (AI)
@@ -60,7 +61,7 @@ To meet these demands, the semiconductor industry is moving toward **zeta-scale 
 ```math
 10^{21} \text{ FLOPS}
 ```
-
+---
 ## 1.1.1  Historical Evolution of Computing
 
 ###  Early Computing Era
@@ -83,9 +84,9 @@ Today, devices with millions of times more performance fit inside a smartphone.
 
 For decades, Moore’s Law enabled exponential growth in computing power by increasing transistor density.
 
-
+---
 ## 1.1.2 CMOS Evolution Areas
-![Image]()
+![Image](https://github.com/Indhumuraliraj/7nm_FinFETs_Workshop/blob/main/images/CMOS_Evolution.png)
 
 ### Patterning Technology
 
@@ -147,7 +148,7 @@ Evolution:
 At 45nm technology nodes, HKMG became essential to reduce leakage current.
 
 
-
+---
 ## 1.1.3 Problems with Traditional Planar MOSFETs
 
 As transistor dimensions scaled below 28nm, traditional planar MOSFETs started facing major limitations.
@@ -184,7 +185,7 @@ Modern processors reached a practical power limit around:
 
 This prevented further clock-frequency scaling.
 
-
+---
 
 ## 1.1.4 Impact of Mobile Computing
 
@@ -206,9 +207,9 @@ As a result:
 
 FinFET (Fin Field Effect Transistor) is a three-dimensional transistor technology in which the conducting channel is formed as a vertical silicon fin, and the gate wraps around the fin from multiple sides. This structure provides better electrostatic control, reduces leakage current, improves switching performance, and enables lower power consumption compared to traditional planar MOSFETs.
 
-| **VCTAT** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/vctat_temp.png) | **VPTAT** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/vpat_temp.png) |
+| ![image](https://github.com/Indhumuraliraj/7nm_FinFETs_Workshop/blob/main/images/finfet1.png) | ![image](https://github.com/Indhumuraliraj/7nm_FinFETs_Workshop/blob/main/images/finfet2.png) |
 |:---:|:---:|
-
+---
 ### 1.2.2 Why FinFET Technology?
 
 To solve the limitations of planar MOSFETs, the semiconductor industry introduced **FinFETs (Fin Field Effect Transistors)**.
@@ -220,7 +221,7 @@ This provides:
 - Lower leakage current
 - Improved switching behavior
 - Reduced short channel effects
-
+---
 
 
 ### 1.2.3 FinFET Working Principle
@@ -234,7 +235,7 @@ In FinFETs:
 This significantly improves electrostatic control over the channel.
 
 
-
+---
 ### 1.2.4 Why FinFET is Needed
 
 The major reason for introducing FinFET technology was the inability of planar transistors to continue scaling efficiently.
@@ -254,7 +255,7 @@ The major reason for introducing FinFET technology was the inability of planar t
 - Reduced dynamic power
 - Improved electrostatic control
 - Better scalability for advanced nodes
-
+---
 
 ## 1.2.5 Advantages of FinFETs
 
@@ -319,7 +320,7 @@ FEOL (Front-End-Of-Line) innovations mainly focus on improving transistor perfor
 ---
 
 ## 1.3.1 CMOS Technology Inflection Points
-| **VCTAT** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/vctat_temp.png) | **VPTAT** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/vpat_temp.png) |
+|  ![image](https://github.com/Indhumuraliraj/7nm_FinFETs_Workshop/blob/main/images/Tech_inflection1.png) | ![image](https://github.com/Indhumuraliraj/7nm_FinFETs_Workshop/blob/main/images/Tech_inflection2.png) |
 |:---:|:---:|
 
 
@@ -337,9 +338,9 @@ Further scaling introduced:
 These innovations help continue Moore’s Law at advanced technology nodes.
 
 
-
+---
 ## 1.3.2 Standard Cell Area Scaling
-| **VCTAT** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/vctat_temp.png) | **VPTAT** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/vpat_temp.png) |
+|  ![image](https://github.com/Indhumuraliraj/7nm_FinFETs_Workshop/blob/main/images/cell_area1.png) |  ![image](https://github.com/Indhumuraliraj/7nm_FinFETs_Workshop/blob/main/images/cell_area2.png) |
 |:---:|:---:|
 
 
@@ -399,7 +400,7 @@ Advantages include:
 - Better power delivery
 
 
-
+---
 ## 1.3.3 Parasitic Resistance and Capacitance
 
 As transistor dimensions continue shrinking, parasitic resistance and capacitance become major factors affecting performance and power consumption.
@@ -412,9 +413,8 @@ In advanced technologies like FinFETs, GAAFETs, and CFETs, parasitic effects str
 
 
 ### 1.3.3.1 Parasitic Resistance
-![image]()
-
-
+|  ![image](https://github.com/Indhumuraliraj/7nm_FinFETs_Workshop/blob/main/images/parasitic_resistance1.png) |  ![image](https://github.com/Indhumuraliraj/7nm_FinFETs_Workshop/blob/main/images/parasitic_resistance2.png) |
+|:---:|:---:|
 Parasitic resistance increases significantly in advanced nodes because contact dimensions become smaller while current density increases.
 
 Major resistance components include:
@@ -434,7 +434,7 @@ To reduce resistance:
 
 
 ### 1.3.3.2 Parasitic Capacitance
-![image]()
+![image](https://github.com/Indhumuraliraj/7nm_FinFETs_Workshop/blob/main/images/parasitic_capacitance.png)
 
 
 At smaller nodes, parasitic capacitance becomes more dominant than gate capacitance.
@@ -451,10 +451,10 @@ Reducing parasitic capacitance improves:
 - Power efficiency
 - Delay performance
 
-
+---
 
 ## 1.3.4 Device Scaling
-![image]()
+![image](https://github.com/Indhumuraliraj/7nm_FinFETs_Workshop/blob/main/images/device%20scaling.png)
 
 
 As gate lengths approach sub-5nm dimensions, conventional silicon transistors face fundamental scaling limitations such as:
@@ -475,9 +475,8 @@ These materials provide:
 - Better scalability for ultra-small devices
 
 
-
+---
 ## 1.3.5 3D Structures (CFET)
-![image]()
 
 
 CFET (Complementary FET) is a future transistor architecture where NMOS and PMOS devices are stacked vertically instead of placing them side-by-side.
@@ -489,12 +488,12 @@ This structure helps:
 
 CFET is considered the next evolution after Gate-All-Around FETs for future advanced semiconductor technologies.
 
-
+---
 
 ## 1.4 BEOL Innovations
-![Image]()
-### Introduction
 
+### Introduction
+![Image](https://github.com/Indhumuraliraj/7nm_FinFETs_Workshop/blob/main/images/interconnects.png)
 BEOL (Back-End-Of-Line) innovations focus on interconnects, signal routing, and power delivery inside integrated circuits.
 
 As transistor scaling continues, interconnect delay and resistance become major bottlenecks because transistor performance improves faster than metal interconnect performance.
@@ -506,10 +505,10 @@ Therefore, BEOL innovations are important for:
 - Lowering congestion
 - Improving overall chip performance
 
-
+---
 
 ### 1.4.1 Extending Copper Interconnects
-![Image]()
+![Image](https://github.com/Indhumuraliraj/7nm_FinFETs_Workshop/blob/main/images/copper_connects.png)
 
 Copper interconnects have been widely used because of their low resistance. However, at advanced nodes, copper faces scaling challenges due to:
 - Electron scattering
@@ -523,7 +522,7 @@ To continue using copper:
 
 are introduced.
 
-
+---
 
 ### 1.4.2 Transition to Non-Copper Metals
 
@@ -539,9 +538,9 @@ These materials offer:
 - Improved interconnect performance
 
 
-
+---
 ### 1.4.3 Backside Power Delivery Network (BS-PDN)
-![Image]()
+![Image](https://github.com/Indhumuraliraj/7nm_FinFETs_Workshop/blob/main/images/BS_PDN.png)
 Traditional front-side power delivery uses the same metal layers for both signals and power routing, causing routing congestion and IR drop issues.
 
 Backside Power Delivery Network (BS-PDN) moves power routing to the backside of the wafer.
@@ -572,7 +571,7 @@ In an N-FinFET, the conducting channel is formed as a vertical silicon fin, and 
 ### DC Analysis
 **id** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/nfet_id.png) 
 
-
+---
 
 
 
@@ -588,7 +587,7 @@ In a P-FinFET, the conducting channel is formed as a vertical silicon fin, and t
 ### DC Analysis
 **id** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/pfet_id.png) 
 
-
+---
 ## 2.3 CMOS Inverter Characteristics Using 7nm FinFETs
 ### CMOS FinFET Inverter
 
@@ -619,7 +618,7 @@ FinFET technology uses a 3D fin-shaped channel where the gate wraps around the f
 - Output becomes LOW (0)
 
 Thus, the CMOS FinFET inverter produces the logical complement of the input signal.
-
+-----
 ## 2.3.1 DC Characteristics
 
 The DC characteristics describe the relationship between:
@@ -648,7 +647,7 @@ This relationship forms the Voltage Transfer Characteristic (VTC) curve.
 - P-FinFET OFF
 - Output = LOW
 
-
+---
 ## 2.4 CMOS Inverter_vtc Characteristics
 
 ### Overview
@@ -656,7 +655,7 @@ This session focuses on CMOS inverter analysis using 7nm FinFET technology. The 
 
 In 7nm FinFET PDK, **only nfins (number of fins)** is varied for NMOS and PMOS while **channel length (L = 7nm)** remains constant.
 
-
+---
 ## 2.4.1 W/L Ratio (Fin Count in FinFET)
 
 ### Definition
@@ -672,7 +671,7 @@ In FinFET technology, W/L ratio is represented using **number of fins (nfins)** 
 - L is fixed = 7nm
 
 
-
+---
 ## 2.4.2 Switching Threshold Voltage (Vth)
 
 ### Definition
@@ -689,7 +688,7 @@ It depends on strength ratio of PMOS and NMOS.
 meas dc v_th when nfet_out=nfet_in
 ```
 **Vin_Vout** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/vin_vout.png)
-
+---
 ## 2.4.3 Drain Current (Id)
 
 ### Definition
@@ -708,7 +707,7 @@ plot id
 ```
 
 **Drain_Current** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/id.png)
-
+---
 ## 2.4.4 Power Consumption
 ### Definition
 
@@ -723,7 +722,7 @@ meas tran id_pwr integ trans_current from=20e-12 to=60e-12
 let power = abs((id_pwr * 0.7)/40)
 print power
 ```
-
+---
 ## 2.4.5 Propagation Delay (Tp)
 ### Definition
 
@@ -738,7 +737,7 @@ meas tran tpf when nfet_out=0.35 FALL=1
 let tp = (tpf + tpr)/2
 print tp
 ```
-
+---
 ## 2.4.6 Gain (Av)
 ### Definition
 
@@ -750,7 +749,7 @@ Gain represents how much output voltage changes with respect to input voltage.
 let gain_av = abs(deriv(nfet_out))
 plot gain
 ```
-
+---
 ## 2.4.7 Noise Margin
 ### Definition
 
@@ -771,7 +770,7 @@ let nml = vil - vol
 print nmh
 print nml
 ```
-
+---
 ## 2.4.8 Transconductance (Gm)
 ### Definition
 
@@ -787,7 +786,7 @@ plot gm
 ```
 
 **Gain_Margin** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/gm.png)
-
+---
 ## 2.4.9 Frequency (f)
 ### Definition
 
@@ -804,6 +803,7 @@ let t_delay = tr + tf
 let f = 1/t_delay
 print f
 ```
+---
 ## 2.4.10 Output Resistance (Rout)
 ### Definition
 
@@ -826,10 +826,10 @@ This assignment focuses on the **characterization of a 7nm FinFET CMOS inverter*
 
 You will simulate an inverter circuit, vary transistor parameters, and extract important electrical characteristics to complete a final **characterization table**.
 
-
+---
 ## Objective
 To analyze and understand the performance of a 7nm FinFET inverter by extracting key metrics from SPICE simulation results and studying the impact of device sizing on circuit behavior.
-
+---
 ## Procedure
 
 ## 1. Run Simulation
@@ -914,7 +914,7 @@ Even though the device geometry is being scaled significantly, the electrical ou
 - The circuit is likely not load-dependent or not properly switching  
 - The inverter may be operating under ideal or constrained measurement conditions  
 - The simulation is dominated by fixed biasing or model limitations rather than transistor scaling effects  
-
+---
 
 ## 3. Add Uniqueness to Simulation
 To ensure unique results for each student, add a dummy voltage source:
@@ -925,6 +925,7 @@ ASCII sum = 105 + 110 + 100 + 104 + 117 = 536
 ```spice
 Vuniq in 0 DC 0.536
 ```
+---
 ### Conclusion
 
 The dataset confirms correct geometric scaling of MOS/FinFET dimensions, but the lack of variation in electrical parameters indicates that the circuit is not reflecting true dynamic behavior. This suggests a setup or measurement limitation in the simulation rather than actual device performance.
@@ -934,6 +935,7 @@ The dataset confirms correct geometric scaling of MOS/FinFET dimensions, but the
 
 # 3. Design of a BGR (Bandgap Reference) Circuit
 
+![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/images/Bandgap_reference.png)
 
 ## 3.1 What is Bandgap Reference?
 
@@ -946,7 +948,6 @@ V_{REF} \approx 1.2V
 ```
 
 
-![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/lab/Bandgap_reference.png)
 
 ## 3.2 Why was Bandgap Reference Introduced?
 
@@ -972,7 +973,7 @@ To overcome these problems, Bandgap Reference circuits were introduced to provid
 - Reliable circuit performance
 
 
-
+---
 
 ## 3.3 Principle of Bandgap Reference
 
@@ -993,7 +994,7 @@ The working principle of a Bandgap Reference is based on combining two voltages 
 - Generated using thermal voltage differences
 
 
-
+---
 ## 3.4 Working of Bandgap Reference
 
 The Bandgap Reference circuit combines:
@@ -1005,7 +1006,7 @@ in proper proportions so that the temperature effects cancel each other.
 Mathematically:
 
 ```math
-V_REF = V_BE + k(V_T)
+V_{REF} = V_{BE} + k(V_T)
 ```
 
 Where:
@@ -1014,8 +1015,8 @@ Where:
 - \(k\) = scaling factor
 
 As temperature increases:
-- \(V_{BE}\) decreases
-- \(V_T\) increases
+- (V_BE) decreases
+- (V_T) increases
 
 These opposite variations balance each other, producing a nearly constant output voltage.
 
@@ -1033,8 +1034,8 @@ The aim is to analyze key performance parameters such as:
 - Line regulation
 - Temperature stability
 - Startup behavior
-
-## Design and Simulation
+  ---
+## 1. Design and Simulation
 In this project, the Bandgap Reference circuit is designed and simulated using Xschem and Ngspice. The circuit performance is analyzed by varying supply voltage and temperature conditions.
 
 ### BGR Schematic in Xschem 
@@ -1055,8 +1056,8 @@ In this project, the Bandgap Reference circuit is designed and simulated using X
 |:---:|:---:|
 
 
-
-## Characterization Table
+---
+## 2. Characterization Table
 
 
 | S.No | VDD (V) | Temp (°C) | Vref (V) | Line Reg. (mV/V) | Startup Time (ns) |
@@ -1077,9 +1078,9 @@ In this project, the Bandgap Reference circuit is designed and simulated using X
 - The output reference voltage remains close to 4.93 V under different operating conditions.
 
 
+---
 
-
-## Unique Design Requirement
+## 3. Unique Design Requirement
 
 To ensure each student's results are unique, a resistor must be added based on ASCII sum of username.
 
