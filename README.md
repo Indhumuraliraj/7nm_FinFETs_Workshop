@@ -567,9 +567,9 @@ N-FinFET is an advanced 3D transistor structure where electrons act as the major
 In an N-FinFET, the conducting channel is formed as a vertical silicon fin, and the gate wraps around the fin from multiple sides, providing better electrostatic control over the channel. When a positive gate voltage greater than the threshold voltage is applied, electrons flow from source to drain, allowing current conduction.
 
 ### NFET Schematic in Xschem 
-**nfet.sch** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/nfet_sch.png)  
+**nfet.sch** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/lab/nfet_sch.png)  
 ### DC Analysis
-**id** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/nfet_id.png) 
+**id** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/lab/nfet_id.png) 
 
 ---
 
@@ -583,9 +583,9 @@ P-FinFET is an advanced 3D transistor structure where holes act as the majority 
 
 In a P-FinFET, the conducting channel is formed as a vertical silicon fin, and the gate wraps around the fin from multiple sides, providing better electrostatic control over the channel. When a negative gate voltage greater than the threshold voltage is applied, holes flow from source to drain, allowing current conduction.
 ### PFET Schematic in Xschem 
-**pfet.sch** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/pfet_sch.png)  
+**pfet.sch** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/lab/pfet_sch.png)  
 ### DC Analysis
-**id** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/pfet_id.png) 
+**id** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/lab/pfet_id.png) 
 
 ---
 ## 2.3 CMOS Inverter Characteristics Using 7nm FinFETs
@@ -601,7 +601,7 @@ In a CMOS FinFET inverter:
 FinFET technology uses a 3D fin-shaped channel where the gate wraps around the fin from multiple sides, providing superior electrostatic control compared to planar CMOS transistors.
 
 ### CMOS Inverter Schematic in Xschem 
-**CMOS_Inverter.sch** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/CMOS_inverter_sch.png)
+**CMOS_Inverter.sch** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/lab/CMOS_inverter_sch.png)
 
 ### Working Principle
 
@@ -626,7 +626,7 @@ The DC characteristics describe the relationship between:
 - Output Voltage (\(V_{OUT}\))
 
 ### DC Analysis
-**Vin_Vout** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/CMOS_inverter_vin_vout.png)
+**Vin_Vout** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/lab/CMOS_inverter_vin_vout.png)
 
 This relationship forms the Voltage Transfer Characteristic (VTC) curve.
 
@@ -687,7 +687,7 @@ It depends on strength ratio of PMOS and NMOS.
 ```spice
 meas dc v_th when nfet_out=nfet_in
 ```
-**Vin_Vout** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/vin_vout.png)
+**Vin_Vout** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/lab/vin_vout.png)
 ---
 ## 2.4.3 Drain Current (Id)
 
@@ -706,7 +706,7 @@ let id = v2#branch
 plot id
 ```
 
-**Drain_Current** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/id.png)
+**Drain_Current** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/lab/id.png)
 ---
 ## 2.4.4 Power Consumption
 ### Definition
@@ -785,7 +785,7 @@ meas dc gm_max MAX gm
 plot gm
 ```
 
-**Gain_Margin** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/gm.png)
+**Gain_Margin** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/lab/gm.png)
 ---
 ## 2.4.9 Frequency (f)
 ### Definition
@@ -816,7 +816,7 @@ Output resistance is the ratio of change in output voltage to change in drain cu
 let r_out = deriv(nfet_out, id)
 plot r_out
 ```
-**Resister_out** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/rout.png)
+**Resister_out** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/lab/rout.png)
 
 ----
 
@@ -1044,15 +1044,15 @@ In this project, the Bandgap Reference circuit is designed and simulated using X
 ## Simulations Performed
 
 ### DC Analysis
-| Ngspice Console  <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/DC_Analysis.png) | **VREF** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/vref_temp.png) |
+| Ngspice Console  <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/lab/DC_Analysis.png) | **VREF** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/lab/vref_temp.png) |
 |:---:|:---:|
 
-| **VCTAT** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/vctat_temp.png) | **VPTAT** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/vpat_temp.png) |
+| **VCTAT** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/lab/vctat_temp.png) | **VPTAT** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/lab/vpat_temp.png) |
 |:---:|:---:|
 
   
 ### Transient Analysis
-| Ngspice Console  <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/Transient_Analysis.png) | **VREF** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/vref_time.png) |
+| Ngspice Console  <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/lab/Transient_Analysis.png) | **VREF** <br> ![image](https://github.com/Indhumuraliraj/7nm_finFET_workshop/blob/main/lab/vref_time.png) |
 |:---:|:---:|
 
 
