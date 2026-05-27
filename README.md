@@ -415,6 +415,8 @@ In advanced technologies like FinFETs, GAAFETs, and CFETs, parasitic effects str
 ### 1.3.3.1 Parasitic Resistance
 |  ![image](https://github.com/Indhumuraliraj/7nm_FinFETs_Workshop/blob/main/images/parasitic_resistance1.png) |  ![image](https://github.com/Indhumuraliraj/7nm_FinFETs_Workshop/blob/main/images/parasitic_resistance2.png) |
 |:---:|:---:|
+
+
 Parasitic resistance increases significantly in advanced nodes because contact dimensions become smaller while current density increases.
 
 Major resistance components include:
