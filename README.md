@@ -903,7 +903,7 @@ To analyze and understand the performance of a 7nm FinFET inverter by extracting
 | 49 | 0.7050 | 0.0070 | 100.714 | 0.7050 | 0.0070 | 100.714 | 0.344786 | 0.226071 | 6.42845 | 0.0223352 | 0.700828 | 713.441 |
 | 50 | 0.7050 | 0.0070 | 100.714 | 0.7755 | 0.0070 | 110.786 | 0.344786 | 0.226071 | 6.42845 | 0.0223352 | 0.700828 | 713.441 |
 ---
-## **NOTE: The complete simulation generated results are stored in the result.txt**
+### **NOTE: The complete simulation generated results are stored in the result.txt**
 
 ###  Overall Observation 
 
